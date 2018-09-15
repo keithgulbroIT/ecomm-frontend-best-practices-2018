@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomepageController@index')->name('homepage');
+
+Route::get('/products', 'ProductsController@index')->name('products.index');
+
+
